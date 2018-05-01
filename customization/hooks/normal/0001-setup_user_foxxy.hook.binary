@@ -1,0 +1,7 @@
+#!/bin/sh  
+
+echo "I: create foxxy user"
+adduser --disabled-password --gecos "" foxxy
+
+echo "I: set foxxy user password"
+echo "foxxy:foxxy" | chpasswd
